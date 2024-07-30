@@ -1,6 +1,7 @@
 import React from "react";
 import HomeBanner from "../../Components/HomeBanner";
 import banner1 from "../../assets/images/banner_1.png";
+import banner2 from "../../assets/images/banner_2.png";
 import Button from "@mui/material/Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import ProductItem from "../../Components/ProductItem/index";
@@ -8,11 +9,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import HomeCat from "../../Components/HomeCat";
 
 const Home = () => {
   return (
     <>
       <HomeBanner />
+
+      <HomeCat/>
 
       <section className="homeProducts">
         <div className="container">
@@ -25,6 +29,15 @@ const Home = () => {
                   alt="Promotional Banner"
                 />
               </div>
+
+              <div className="banner mt-4">
+                <img
+                  className="cursor w-100"
+                  src={banner2}
+                  alt="Promotional Banner"
+                />
+              </div>
+
             </div>
             <div className="col-md-9 productRow">
               <div className="d-flex align-items-center">
@@ -118,11 +131,6 @@ const Home = () => {
                   </SwiperSlide>
                 </Swiper>
               </div>
-
-
-
-
-
             </div>
           </div>
         </div>
