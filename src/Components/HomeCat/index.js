@@ -19,12 +19,6 @@ const HomeCat = () => {
     "#fff3ea",
     "#fff3ff",
     "#f2fceb",
-    // "#fffceb",
-    // "#ecffec",
-    // "#feefea",
-    // "#fff3ea",
-    // "#fff3ff",
-    // "#f2fceb",
   ]);
 
   return (

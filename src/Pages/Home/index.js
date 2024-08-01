@@ -16,7 +16,7 @@ const Home = () => {
     <>
       <HomeBanner />
 
-      <HomeCat/>
+      <HomeCat />
 
       <section className="homeProducts">
         <div className="container">
@@ -37,7 +37,6 @@ const Home = () => {
                   alt="Promotional Banner"
                 />
               </div>
-
             </div>
             <div className="col-md-9 productRow">
               <div className="d-flex align-items-center">
@@ -53,7 +52,7 @@ const Home = () => {
                 </Button>
               </div>
 
-              <div className="product_row w-100 mt-4">
+              <div className="product_row w-100 mt-4 d-flex">
                 <Swiper
                   slidesPerView={4}
                   spaceBetween={0}
@@ -93,43 +92,20 @@ const Home = () => {
                     New products with updated stocks.
                   </p>
                 </div>
-
                 <Button className="viewAllBtn ms-auto">
                   View all <IoIosArrowRoundForward />
                 </Button>
               </div>
 
-              <div className="product_row w-100 mt-4">
-                <Swiper
-                  slidesPerView={4}
-                  spaceBetween={0}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  navigation
-                  modules={[Navigation]}
-                  className="mySwiper"
-                >
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-                </Swiper>
+              <div className="product_row productRow2 w-100 mt-4 d-flex">
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
               </div>
             </div>
           </div>
