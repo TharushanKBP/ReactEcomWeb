@@ -2,6 +2,8 @@ import React from "react";
 import HomeBanner from "../../Components/HomeBanner";
 import banner1 from "../../assets/images/banner_1.png";
 import banner2 from "../../assets/images/banner_2.png";
+import banner3 from "../../assets/images/banner_3.png";
+import banner4 from "../../assets/images/banner_4.png";
 import Button from "@mui/material/Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import ProductItem from "../../Components/ProductItem/index";
@@ -22,21 +24,27 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-3">
-              <div className="banner">
-                <img
-                  className="cursor w-100"
-                  src={banner1}
-                  alt="Promotional Banner"
-                />
-              </div>
 
-              <div className="banner mt-4">
+              <div className="sticky">
+                <div className="banner">
+                  <img
+                    className="cursor w-100"
+                    src={banner1}
+                    alt="Promotional Banner 1"
+                  />
+                </div>
+
+                <div className="banner mt-4">
                 <img
                   className="cursor w-100"
                   src={banner2}
-                  alt="Promotional Banner"
+                  alt="Promotional Banner 2"
                 />
               </div>
+              
+              </div>
+
+             
             </div>
             <div className="col-md-9 productRow">
               <div className="d-flex align-items-center">
@@ -66,19 +74,15 @@ const Home = () => {
                   <SwiperSlide>
                     <ProductItem />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ProductItem />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ProductItem />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ProductItem />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ProductItem />
                   </SwiperSlide>
@@ -106,6 +110,23 @@ const Home = () => {
                 <ProductItem />
                 <ProductItem />
                 <ProductItem />
+              </div>
+
+              <div className="d-flex mt-4 mb-5 bannerSec">
+                <div className="banner">
+                  <img
+                    src={banner3}
+                    className="cursor w-100"
+                    alt="Promotional Banner 3"
+                  />
+                </div>
+                <div className="banner">
+                  <img
+                    src={banner4}
+                    className="cursor w-100"
+                    alt="Promotional Banner 4"
+                  />
+                </div>
               </div>
             </div>
           </div>
