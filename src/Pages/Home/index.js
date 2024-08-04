@@ -15,6 +15,7 @@ import { Navigation } from "swiper/modules";
 import HomeCat from "../../Components/HomeCat";
 import { IoMailOutline } from "react-icons/io5";
 
+
 const Home = () => {
   return (
     <>
@@ -153,6 +154,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      
     </>
   );
 };
