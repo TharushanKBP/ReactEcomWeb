@@ -21,7 +21,7 @@ body {
 
 /* Background color class */
 .bg-blue {
-  background-color: #233a95;
+  background-color: #7a55c1;
 }
 
 @media (min-width:1300px){
@@ -380,7 +380,7 @@ nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
 }
 
 nav .allCatTab{
-  background-color: #2bbef9;
+  background-color: #7a55c1;
   padding: 10px 15px !important;
   border-radius: 30px !important;
   /* border: 1px solid rgba(0, 0, 0, 0.1) !important; */
@@ -391,7 +391,7 @@ nav .allCatTab *{
 }
 
 nav .allCatTab:hover{
-  background-color: #2bbef9;
+  background-color: #7a55c1;
 }
 
 nav .allCatTab .text{
@@ -437,7 +437,7 @@ nav .navPart2 ul li a svg{
 
 nav .navPart2 ul li a:hover{
   background: #f0faff;
-  color: #2bbef9;
+  color: #7a55c1;
 }
 
 nav .navPart2 ul li{
@@ -673,7 +673,7 @@ nav .navPart2 ul li:hover .submenu{
 }
 
 .badge-primary{
-  background: #2bbef9 !important;
+  background: #7a55c1 !important;
 }
 
 .homeCat {
@@ -920,7 +920,7 @@ footer .copyright ul li a svg{
 }
 
 footer .copyright ul li a:hover{
-  background: #2bbef9 !important;
+  background: #7a55c1 !important;
 }
 
 footer .copyright ul li a:hover svg{
