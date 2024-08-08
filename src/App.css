@@ -30,6 +30,47 @@ body {
   }
 }
 
+.badge {
+  display: inline-block;
+  top: 30px;
+  padding: 7px 10px;
+}
+
+.badge.bg-success{
+  background: #e5f8ed !important;
+  color: #16b858 !important;
+}
+
+button{
+  text-transform: capitalize !important;
+}
+
+.btn-blue{
+  background: #233a95 !important;
+  color: #fff !important;
+  text-transform: capitalize !important;
+}
+
+.btn-big{
+  font-size: 15px !important;
+  padding: 5px 40px !important;
+  min-width:auto !important;
+}
+
+.btn-round{
+  border-radius: 30px !important;
+}
+
+.btn-round svg{
+  font-size: 20px;
+}
+
+.btn-sml{
+  font-size: 12px !important;
+  color: #000;
+  text-transform: capitalize !important;
+}
+
 .cursor{
   cursor:pointer;
 }
@@ -233,8 +274,8 @@ background-color: #f1f1f1 !important;
 }
 
 
-.locationModel .close_{
-    position: absolute;
+.close_{
+    position: absolute !important;
     top: 10px;
     right: 10px;
     color: #000 !important;
@@ -244,8 +285,8 @@ background-color: #f1f1f1 !important;
     border-radius: 50px !important;
 }
 
-.locationModel .close_ svg{
-  font-size: 15px;
+.close_ svg{
+  font-size: 22px;
 }
 
 nav .navPart1{
@@ -406,7 +447,7 @@ nav .navPart2 ul li{
 nav .navPart2 ul li .submenu{
   position: absolute;
   top: 150%;
-  left: 102px;
+  left: 0px !important;
   min-width: 300px;
   background: #fff;
   opacity: 0;
@@ -545,14 +586,18 @@ nav .navPart2 ul li:hover .submenu{
   font-weight: 600;
 }
 
-.productItem .info .oldPrice{
+.info .oldPrice{
   font-size: 16px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.4);
   text-decoration: line-through;
 }
 
-.productItem .info .netPrice{
+.info .oldPrice.lg{
+  font-size: 20px;
+}
+
+.info .netPrice{
   font-size: 16px;
   font-weight: bold;
   color: rgba(255, 0, 0, 0.4);
@@ -719,7 +764,7 @@ nav .navPart2 ul li:hover .submenu{
 
 .badge {
   position: absolute; 
-  top: 10px;
+  top: 30px;
   left: 10px;
 }
 
@@ -880,4 +925,121 @@ footer .copyright ul li a:hover{
 
 footer .copyright ul li a:hover svg{
   color: #fff !important;
+}
+
+.productModal .MuiPaper-elevation{
+  padding: 25px;
+  position: relative;
+  max-width: 900px !important;
+  width: 900px !important;
+}
+
+.productModal h4{
+  font-size: 20px !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.productZoom{
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.productZoom .badge{
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 100;
+}
+
+
+.zoomSliderBig{
+  width: 100% !important;
+}
+
+
+.zoomSlider{
+  padding-top: 30px;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  display: block;
+  overflow: hidden;
+  margin: 20;
+  padding: 10;
+
+}
+
+.zoomSlider .slick-slide {
+  padding-right: 20px !important;
+}
+
+.zoomSlider *{
+  outline: none !important;
+}
+
+.zoomSlider .item{
+  border: 2px solid transparent !important;
+  overflow: hidden !important;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.zoomSlider .slick-current .item{
+  border: 2px solid #3bb77e !important;
+}
+
+.zoomSlider .slick-arrow{
+  top: 55% !important;
+  zoom: 80% !important;
+}
+
+.zoomSlider .slick-arrow.slick-next{
+  right: -2% !important;
+}
+
+.zoomSlider .slick-arrow.slick-prev{
+  left: -5% !important;
+}
+
+.quantityDrop{
+  width: 150px;
+  gap: 10px;
+}
+
+.quantityDrop button{
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 560% !important;
+  background-color: #edeef5 !important;
+  border: 1px solid rgb(0, 0, 0,0.1) !important;
+  color: #000;
+}
+
+.quantityDrop button svg{
+  color: #000 !important;
+}
+
+.quantityDrop input{
+  width: 40px;
+  border: 0px;
+  background: transparent;
+  outline: none !important;
+  text-align: center;
+}
+
+.productModal .actions button{
+  color: #000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  font-size: 10px !important;
+}
+
+.productModal .actions button svg{
+  font-size: 15px !important;
 }
