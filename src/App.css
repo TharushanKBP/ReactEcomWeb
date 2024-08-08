@@ -21,7 +21,7 @@ body {
 
 /* Background color class */
 .bg-blue {
-  background-color: #7a55c1;
+  background-color: #4C2793;
 }
 
 @media (min-width:1300px){
@@ -46,7 +46,7 @@ button{
 }
 
 .btn-blue{
-  background: #233a95 !important;
+  background: #7a55c1 !important;
   color: #fff !important;
   text-transform: capitalize !important;
 }
@@ -146,7 +146,7 @@ button{
 .headerWrapper .header .part2 .countryDrop .name {
   font-size: 14px !important;
   text-transform: capitalize !important;
-  color: #233a95 !important;
+  color: #7a55c1 !important;
   font-weight: 700;
   line-height: 16px;
 }
@@ -781,7 +781,7 @@ nav .navPart2 ul li:hover .submenu{
 .newLetterSection{
   width: 100%;
   height: 400px;
-  background: #233a95;
+  background: #4C2793;
 }
 
 .newLetterSection p{
@@ -845,7 +845,7 @@ nav .navPart2 ul li:hover .submenu{
   position: absolute;
   top: 6px;
   right: 10px;
-  background: #233a95 !important;
+  background: #7a55c1 !important;
   font-size: 14px !important;
   padding: 12px 25px !important;
   color: #fff !important;
