@@ -44,16 +44,16 @@ const Listing = () => {
               <div className="showBy mt-3 mb-3 d-flex align-items-center">
                 <div className="d-flex align-items-center btnWrapper">
 
-                  <Button onClick={() => setProductView('one')}>
+                  <Button className={productView==='one' && 'viewOneItmPerview'} onClick={() => setProductView('one')}>
                     <TiThMenu />
                   </Button>
-                  <Button onClick={() => setProductView('two')}>
+                  <Button className={productView==='two' && 'viewOneItmPerview'} onClick={() => setProductView('two')}>
                     <BsGridFill />
                   </Button>
-                  <Button onClick={() => setProductView('three')}>
+                  <Button className={productView==='three' && 'viewOneItmPerview'} onClick={() => setProductView('three')}>
                     <TbGridDots />
                   </Button>
-                  <Button onClick={() => setProductView('four')}>
+                  <Button className={productView==='four' && 'viewOneItmPerview'} onClick={() => setProductView('four')}>
                     <TfiLayoutGrid4Alt />
                   </Button>
                 </div>
@@ -93,10 +93,83 @@ const Listing = () => {
                 <ProductItem itemView={productView} />
                 <ProductItem itemView={productView} />
                 <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} /> |
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+                <ProductItem itemView={productView} />
+
               </div>
 
               <div className="d-flex align-items-center justify-content-center mt-5">
-                <Pagination count={10} color="primary" />
+                <Pagination count={10} color="primary" size="large"/>
               </div>
 
 

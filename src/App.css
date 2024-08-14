@@ -1058,6 +1058,12 @@ footer .copyright ul li a:hover svg{
   flex: 0 0 20%;
 }
 
+.product_Listing_Page .productListing .sidebar .sticky {
+  position: sticky;
+  top: 20px;
+}
+
+
 .product_Listing_Page .productListing .sidebar .filterBox {
   margin-bottom: 35px;
 }
@@ -1151,6 +1157,10 @@ footer .copyright ul li a:hover svg{
   opacity: 0.5;
 }
 
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button .act svg{
+  opacity: 1 !important;
+}
+
 .product_Listing_Page .productListing .content_right .showBy .btnWrapper button:hover svg{
   opacity: 1;
 
@@ -1165,6 +1175,10 @@ footer .copyright ul li a:hover svg{
   color: #000;
   opacity: 0.6;
   margin-left: 5px;
+}
+
+.showByFilter button .act{
+  background: #ccc !important;
 }
 
 .showPerPageDropdown .MuiPaper-root {
