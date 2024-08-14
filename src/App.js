@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
+import Listing from "./Pages/Listing";
 import Header from "./Components/Header";
 import { createContext, useState, useEffect } from "react";
 import Footer from "./Components/Footer";
@@ -43,7 +44,8 @@ function App() {
       <MyContext.Provider value={values}>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" exact={true} element={<Home />} />
+          <Route path="/cat/:id" exact={true} element={<Listing />} />
         </Routes>
         <Footer/>
 

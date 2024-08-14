@@ -1,9 +1,9 @@
 import React from 'react';
 import {Swiper,SwiperSlide} from 'swiper/react';
-import slide1 from '../../assets/images/slideshow/Beige and Gray Elegant Jewerly Photo Etsy Shop Cover  (1).png'
-import slide2 from '../../assets/images/slideshow/Beige and Gray Elegant Jewerly Photo Etsy Shop Cover  (2).png'
-import slide3 from '../../assets/images/slideshow/Beige and Gray Elegant Jewerly Photo Etsy Shop Cover  (3).png'
-import slide4 from '../../assets/images/slideshow/Beige and Gray Elegant Jewerly Photo Etsy Shop Cover .png'
+import slide1 from '../../assets/images/slideshow/Beige and Gray Elegant Jewerly Photo Etsy Shop Cover  (1).png';
+import slide2 from '../../assets/images/slideshow/Beige and Gray Elegant Jewerly Photo Etsy Shop Cover  (2).png';
+import slide3 from '../../assets/images/slideshow/Beige and Gray Elegant Jewerly Photo Etsy Shop Cover  (3).png';
+import slide4 from '../../assets/images/slideshow/Beige and Gray Elegant Jewerly Photo Etsy Shop Cover .png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Navigation,Autoplay } from 'swiper/modules';
