@@ -15,6 +15,8 @@ import { FaRegHeart } from "react-icons/fa6";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import { MdCompareArrows } from "react-icons/md";
 import { MyContext } from "../../App";
+import ProductItem from './../ProductItem/index';
+import ProductZoom from './../ProductZoom/index';
 
 const ProductModal = (props) => {
   const zoomSliderBig = useRef();
@@ -84,74 +86,9 @@ const ProductModal = (props) => {
 
       <div className="row mt-2 productDetaileModal">
         <div className="col-md-5">
-          <div className="productZoom position-relative">
-            <div className="badge badge-primary">23%</div>
-            <Slider
-              {...settings2}
-              className="zoomSliderBig"
-              ref={zoomSliderBig}
-            >
-              <div className="item">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1}
-                  src={boximage1}
-                />
-              </div>
-
-              <div className="item">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1}
-                  src={boximage2}
-                />
-              </div>
-
-              <div className="item">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1}
-                  src={boximage3}
-                />
-              </div>
-
-              <div className="item">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1}
-                  src={boximage4}
-                />
-              </div>
-
-              <div className="item">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1}
-                  src={boximage5}
-                />
-              </div>
-            </Slider>
-          </div>
-
-          <Slider {...settings} className="zoomSlider" ref={zoomSlider}>
-            <div className="item">
-              <img src={boximage1} className="w-100" onClick={() => goto(0)} />
-            </div>
-            <div className="item">
-              <img src={boximage2} className="w-100" onClick={() => goto(1)} />
-            </div>
-            <div className="item">
-              <img src={boximage3} className="w-100" onClick={() => goto(2)} />
-            </div>
-            <div className="item">
-              <img src={boximage4} className="w-100" onClick={() => goto(3)} />
-            </div>
-
-            <div className="item">
-              <img src={boximage5} className="w-100" onClick={() => goto(4)} />
-            </div>
-          </Slider>
+          <ProductZoom/>
         </div>
+
         <div className="col-md-7">
           <div className="d-flex info align-items-center mb-4">
             <span className="oldPrice lg mr-2">$10.45</span>
