@@ -11,6 +11,7 @@ import Tooltip from "@mui/material/Tooltip";
 import TextField from "@mui/material/TextField";
 import user1 from "../../assets/images/users/user-img1.jpg";
 import user2 from "../../assets/images/users/user-img2.jpg";
+import RelatedProducts from "../ProductDetails/RelatedProducts/index";
 
 const ProductDetails = () => {
   const [activeSize, setActiveSize] = useState(null);
@@ -31,7 +32,7 @@ const ProductDetails = () => {
     setEmail("");
   };
 
-  const descriptionContent = "This is the description of the product.";
+  const descriptionContent = "This is the description of the product This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.This is the description of the product.";
 
   const additionalInfoContent = (
     <table className="table table-striped table-bordered">
@@ -178,7 +179,7 @@ const ProductDetails = () => {
           <Button
             type="submit"
             variant="contained"
-            style={{ backgroundColor: "#6d4aae", color: "#fff" }} // Custom color
+            style={{ backgroundColor: "#6d4aae", color: "#fff" }} 
             className="mt-4"
           >
             Submit Review
@@ -344,6 +345,10 @@ const ProductDetails = () => {
               <div className="tab-content mt-4">{renderTabContent()}</div>
             </div>
           </div>
+
+          <br/>
+
+          <RelatedProducts/>
         </div>
       </section>
     </>
