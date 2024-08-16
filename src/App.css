@@ -17,6 +17,7 @@ body {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
   overflow-x: hidden;
+  font-size: 14px;
 }
 
 /* Background color class */
@@ -32,8 +33,9 @@ body {
 
 .badge {
   display: inline-block;
-  top: 30px;
+  top: 100px;
   padding: 7px 10px;
+  border-radius: 20px;
 }
 
 .badge.bg-success{
@@ -69,6 +71,11 @@ button{
   font-size: 12px !important;
   color: #000;
   text-transform: capitalize !important;
+}
+
+.btn-circle{
+  border-radius: 50px !important;
+  min-width: auto !important;
 }
 
 .cursor{
@@ -950,8 +957,8 @@ footer .copyright ul li a:hover svg{
 
 .productZoom .badge{
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: 5px;
+  left: 5px;
   z-index: 100;
 }
 
@@ -1215,6 +1222,269 @@ footer .copyright ul li a:hover svg{
   align-items: center;
 }
 
+.section{
+  padding: 45px 0px;
+}
+
+.productDetails .hd{
+  font-size: 26px;
+}
+
+.productDetails .oldPrice{
+  font-size: 18px;
+}
+
+.productDetails .netPrice{
+  font-size: 19px;
+}
+
+.badgel {
+  top: 85px;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+
+.badgel.badge-success{
+  background: #e5f8ed !important;
+  color: #16b858 !important;
+}
+
+.productSize{
+  width: 100%;
+  height: auto;
+  padding: 25px 0px;
+}
+
+.productSize ul li{
+  margin-right: 10px !important;
+}
+
+.productSize ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #000;
+  font-size: 14px !important;
+  transition: all 0.1s ease-in-out;
+}
+
+.productSize ul li a:hover{
+  background: #ececec;
+}
+
+.productSize ul li a.active{
+  background: #6d4aae !important;
+  color: #fff !important;
+}
+
+.productDetails .btn-circle{
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: #edeef5 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  color: #000;
+  padding: 5px !important;
+}
+
+.productDetails .btn-circle svg{
+  color: #000 !important;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.productDetails .btn-circle:hover{
+  background: #ccc !important;
+}
+
+.reviews-section {
+  padding: 1rem;
+  background-color: #f8f9fa; 
+  border-radius: 0.5rem;
+}
+
+.overall-rating {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.overall-rating h4 {
+  margin-bottom: 0.5rem;
+}
+
+.review-list {
+  margin-top: 1rem;
+}
+
+.review-item {
+  padding: 1rem;
+  background-color: #ffffff; 
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); 
+  margin-bottom: 1rem;
+}
+
+.review-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.reviewer-details {
+  margin-right: auto;
+}
+
+.review-item h6 {
+  margin-bottom: 0.25rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-muted {
+  color: #086cc4;
+}
+
+.text-dark {
+  color: #343a40;
+}
+
+.customTabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.tab-list {
+  padding: 0;
+  margin: 0;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: #6d4aae;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+}
+
+.tab-button.active {
+  color: #000;
+  background-color: #6d4aae; 
+  border-radius: 0.25rem 0.25rem 0 0; 
+}
+
+.tab-button:not(.active):hover {
+  background-color: rgba(0, 123, 255, 0.1); 
+}
+
+.tab-content {
+  padding: 1.5rem;
+  background-color: #f8f9fa; 
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 0 0 0.25rem 0.25rem; 
+  margin-top: -1px; 
+}
 
 
+.productSize {
+  display: flex;
+  align-items: center;
+}
 
+
+.productSize span {
+  margin-right: 10px;
+}
+
+
+.productSize .list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+}
+
+
+.productSize .list-inline-item {
+  margin-right: 10px;
+}
+
+.productSize .tag {
+  border: 1px solid #ddd; 
+  background-color: #f8f9fa; 
+  padding: 5px 10px;
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 14px; 
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s; 
+  outline: none; 
+}
+
+.productSize .tag.active {
+  background-color: #6d4aae; 
+  color: #fff; 
+  border-color: #6d4aae; 
+}
+
+.productSize .tag:hover {
+  background-color: #6d4aae;
+}
+
+.customTabs {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.tab-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  list-style: none; 
+}
+
+.tab-item {
+  flex: 1;
+}
+
+.tab-button {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #6d4aae !important;
+  color: #fff;
+}
+
+.tab-button:not(.active):hover {
+  background-color: #e2e6ea;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+}

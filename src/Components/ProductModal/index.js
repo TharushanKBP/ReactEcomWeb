@@ -2,56 +2,17 @@ import Dialog from "@mui/material/Dialog";
 import Button from "@mui/material/Button";
 import { MdClose } from "react-icons/md";
 import Rating from "@mui/material/Rating";
-import Slider from "react-slick";
-import boximage1 from "../../assets/images/products/product2.jpg";
-import boximage2 from "../../assets/images/products/product2-1.jpg";
-import boximage3 from "../../assets/images/products/product2-2.jpg";
-import boximage4 from "../../assets/images/products/product2-3.jpg";
-import boximage5 from "../../assets/images/products/product2-4.jpg";
 import QuantityBox from "../../Components/QuatityBox/index";
-import { useRef, useContext } from "react";
-import InnerImageZoom from "react-inner-image-zoom";
+import { useContext } from "react";
 import { FaRegHeart } from "react-icons/fa6";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import { MdCompareArrows } from "react-icons/md";
 import { MyContext } from "../../App";
-import ProductItem from './../ProductItem/index';
 import ProductZoom from './../ProductZoom/index';
 
 const ProductModal = (props) => {
-  const zoomSliderBig = useRef();
-  const zoomSlider = useRef();
-
+  
   const context = useContext(MyContext);
-
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    fade: false,
-    arrows: true,
-  };
-
-  const settings2 = {
-    dots: false,
-    infinite: false,
-    speed: 700,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: false,
-    arrows: false,
-  };
-
-  const goto = (index) => {
-    if (zoomSlider.current && zoomSliderBig.current) {
-      zoomSlider.current.slickGoTo(index);
-      zoomSliderBig.current.slickGoTo(index);
-    } else {
-      console.error("zoomSlider or zoomSliderBig is undefined");
-    }
-  };
 
   return (
     <Dialog
