@@ -1772,10 +1772,27 @@ body {
 
 .signInPage {
   background-image: url('../../../Ecom-ReactWeb/ReactEcomWeb/src/assets/images/shopping-cart-filled-with-coins-copy-space-background.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  padding: 3rem 0; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 0;
+  min-height: 100vh;
+}
+
+.section.signInPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.signInPage {
+  background-image: url('../../../Ecom-ReactWeb/ReactEcomWeb/src/assets/images/shopping-cart-filled-with-coins-copy-space-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 0;
   min-height: 100vh;
 }
 
@@ -1788,13 +1805,14 @@ body {
 }
 
 .container_login {
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.9); 
   padding: 2rem;
-  width:400px;
-  border-radius: 8px; 
-  max-width: 400px; 
-  margin: 0 auto; 
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 0 auto;
 }
+
 .inputGroup {
   margin-bottom: 1rem;
 }
@@ -1812,15 +1830,32 @@ body {
   border-radius: 4px;
 }
 
+.signInButton, .cancelButton {
+  padding: 0.6rem;  
+  font-size: 14px;  
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .signInButton {
-  width: 100%;
-  padding: 0.75rem;
   background-color: #6d4aae;
   color: #fff;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+}
+
+.signInButton:hover {
+  background-color: #573799; 
+}
+
+.cancelButton {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.cancelButton:hover {
+  background-color: #ddd; 
 }
 
 .additionalOptions {
@@ -1835,15 +1870,19 @@ body {
   text-decoration: none;
 }
 
+.forgotPassword:hover, .createAccount:hover {
+  text-decoration: underline; 
+}
+
 .socialSignIn {
   display: flex;
   justify-content: space-between;
-  gap: 10px; 
+  gap: 10px;
   margin-top: 2rem;
 }
 
 .socialSignIn button {
-  flex: 1; 
+  flex: 1;
   padding: 0.5rem;
   border: none;
   border-radius: 4px;
@@ -1852,6 +1891,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .googleSignIn {
@@ -1859,17 +1899,23 @@ body {
   color: #fff;
 }
 
+.googleSignIn:hover {
+  background-color: #c4382e;
+}
+
 .facebookSignIn {
   background-color: #4267b2;
   color: #fff;
+}
+
+.facebookSignIn:hover {
+  background-color: #365899;
 }
 
 .socialSignIn i {
   margin-right: 8px;
   font-size: 16px;
 }
-
-
 
 .logoContainer {
   text-align: center;
@@ -1879,4 +1925,57 @@ body {
 .logo {
   max-width: 150px;
   height: auto;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-login p {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.google-icon {
+  width: 245px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.google-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container_login {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .socialSignIn {
+    flex-direction: column;
+  }
+
+  .socialSignIn button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signInButton, .cancelButton {
+    font-size: 13px; 
+    padding: 0.5rem; 
+  }
+
+  .additionalOptions {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }

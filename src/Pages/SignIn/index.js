@@ -1,16 +1,16 @@
 import { useContext, useEffect } from "react";
 import { MyContext } from "../../App";
 import logo from "../../assets/images/logo-blue.png";
+import google_image from "../../assets/images/google_image.png";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const context = useContext(MyContext);
 
   useEffect(() => {
     if (context && typeof context.setisHeaderFooterShow === "function") {
-      // Hide the header and footer when the component mounts
       context.setisHeaderFooterShow(false);
 
-      // Restore the original state when the component unmounts
       return () => {
         context.setisHeaderFooterShow(true);
       };
@@ -20,7 +20,6 @@ const SignIn = () => {
   return (
     <section className="section signInPage" aria-labelledby="signInTitle">
       <div className="container_login">
-        {/* Logo Section */}
         <div className="logoContainer">
           <img src={logo} alt="Your Logo" className="logo" />
         </div>
@@ -47,16 +46,17 @@ const SignIn = () => {
               aria-required="true"
             />
           </div>
-          <button type="submit" className="signInButton">
-            Sign In
-          </button>
-          <div className="socialSignIn">
-            <button type="button" className="googleSignIn">
-              <i className="fab fa-google"></i> Sign in with Google
+
+          <div className="d-flex align-items-center mt-3 mb-3">
+            <button className="signInButton col-8">
+              Sign In
             </button>
-            <button type="button" className="facebookSignIn">
-              <i className="fab fa-facebook-f"></i> Sign in with Facebook
-            </button>
+
+            <Link to="/">
+              <button className="cancelButton col ml-4">
+                Cancel
+              </button>
+            </Link>
           </div>
 
           <div className="additionalOptions">
@@ -66,6 +66,10 @@ const SignIn = () => {
             <a href="#" className="createAccount">
               Create an Account
             </a>
+          </div>
+          <div className="social-login">
+            <p>Or continue with social account</p>
+            <img src={google_image} alt="Google icon" className="google-icon" />
           </div>
         </form>
       </div>
