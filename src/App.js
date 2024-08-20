@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import ProductModal from "./Components/ProductModal/index"; 
 import axios from 'axios';
 import ProductDetails from './Pages/ProductDetails/index';
+import SignIn from './Pages/SignIn/index';
 import Cart from './Pages/Cart/index';
 
 const MyContext = createContext();
@@ -17,6 +18,7 @@ function App() {
   const [countryList, setCountryList] = useState([]);
   const [selectedCountry, setselectedCountry] = useState('');
   const [isOpenProductModal, setIsOpenProductModal] = useState(false);
+  const [isHeaderFooterShow, setisHeaderFooterShow] = useState(true);
 
 
   useEffect(() => {
@@ -38,21 +40,31 @@ function App() {
     setselectedCountry,
     selectedCountry,
     isOpenProductModal,
-    setIsOpenProductModal
+    setIsOpenProductModal,
+    isHeaderFooterShow,
+    setisHeaderFooterShow
   };
 
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>
-        <Header />
+
+        {
+          isHeaderFooterShow === true && <Header />
+        }
+        
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
           <Route path="/cat/:id" exact={true} element={<Listing />} />
           <Route exact={true} path="/product/:id" element={<ProductDetails />} />
           <Route exact={true} path="/cart" element={<Cart />} />
+          <Route exact={true} path="/signIn" element={<SignIn />} />
         </Routes>
-        <Footer/>
 
+        {
+          isHeaderFooterShow === true &&  <Footer/>
+        }
+       
         {
         isOpenProductModal && <ProductModal  />
         }

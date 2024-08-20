@@ -1769,3 +1769,114 @@ body {
   background-color: #6d4aae !important;
   border-color: #6d4aae !important;   
 }
+
+.signInPage {
+  background-image: url('../../../Ecom-ReactWeb/ReactEcomWeb/src/assets/images/shopping-cart-filled-with-coins-copy-space-background.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 3rem 0; 
+  min-height: 100vh;
+}
+
+.section.signInPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container_login {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 2rem;
+  width:400px;
+  border-radius: 8px; 
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.signInButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #6d4aae;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.additionalOptions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.forgotPassword, .createAccount {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.socialSignIn {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; 
+  margin-top: 2rem;
+}
+
+.socialSignIn button {
+  flex: 1; 
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.googleSignIn {
+  background-color: #db4437;
+  color: #fff;
+}
+
+.facebookSignIn {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+.socialSignIn i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
