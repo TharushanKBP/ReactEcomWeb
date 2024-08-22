@@ -59,11 +59,13 @@ button{
   background: #7a55c1 !important;
   color: #fff !important;
   text-transform: capitalize !important;
+  font-weight: 600 !important;
+  padding: 5px 20px !important;
 }
 
 .btn-big{
   font-size: 15px !important;
-  padding: 5px 40px !important;
+  padding: 5px 25px !important;
   min-width:auto !important;
 }
 
@@ -171,7 +173,7 @@ button{
 }
 
 .headerSearch {
-  width: 60%;
+  width: 55%;
   height: 50px;
   background: #f3f4f7;
   padding: 10px;
@@ -1770,22 +1772,6 @@ body {
   border-color: #6d4aae !important;   
 }
 
-.signInPage {
-  background-image: url('../../../Ecom-ReactWeb/ReactEcomWeb/src/assets/images/shopping-cart-filled-with-coins-copy-space-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 3rem 0;
-  min-height: 100vh;
-}
-
-.section.signInPage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f5f5f5;
-}
 
 .signInPage {
   background-image: url('../../../Ecom-ReactWeb/ReactEcomWeb/src/assets/images/shopping-cart-filled-with-coins-copy-space-background.jpg');
@@ -1808,7 +1794,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9); 
   padding: 2rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 460px;
   border-radius: 8px;
   margin: 0 auto;
 }
@@ -1850,7 +1836,7 @@ body {
 
 .cancelButton {
   background-color: #f5f5f5;
-  color: #333;
+  color: #000;
   border: 1px solid #ddd;
 }
 
@@ -1868,6 +1854,11 @@ body {
 .forgotPassword, .createAccount {
   color: #2575fc;
   text-decoration: none;
+}
+
+.required-asterisk {
+  color: red;
+  font-size: 18px;
 }
 
 .forgotPassword:hover, .createAccount:hover {
@@ -1950,6 +1941,17 @@ body {
 .google-icon:hover {
   transform: scale(1.1);
 }
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.inputRow .inputGroup {
+  flex: 1;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

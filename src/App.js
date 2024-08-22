@@ -10,6 +10,7 @@ import ProductModal from "./Components/ProductModal/index";
 import axios from 'axios';
 import ProductDetails from './Pages/ProductDetails/index';
 import SignIn from './Pages/SignIn/index';
+import SignUp from './Pages/SignUp/index';
 import Cart from './Pages/Cart/index';
 
 const MyContext = createContext();
@@ -19,6 +20,7 @@ function App() {
   const [selectedCountry, setselectedCountry] = useState('');
   const [isOpenProductModal, setIsOpenProductModal] = useState(false);
   const [isHeaderFooterShow, setisHeaderFooterShow] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
 
 
   useEffect(() => {
@@ -42,7 +44,9 @@ function App() {
     isOpenProductModal,
     setIsOpenProductModal,
     isHeaderFooterShow,
-    setisHeaderFooterShow
+    setisHeaderFooterShow,
+    isLogin,
+    setIsLogin
   };
 
   return (
@@ -59,6 +63,7 @@ function App() {
           <Route exact={true} path="/product/:id" element={<ProductDetails />} />
           <Route exact={true} path="/cart" element={<Cart />} />
           <Route exact={true} path="/signIn" element={<SignIn />} />
+          <Route exact={true} path="/signUp" element={<SignUp />} />
         </Routes>
 
         {
